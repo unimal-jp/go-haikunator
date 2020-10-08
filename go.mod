@@ -1,3 +1,3 @@
 module github.com/unimal-jp/uni-names
 
-go 1.14
+go 1.15
