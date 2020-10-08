@@ -14,9 +14,9 @@ import (
 
 
 func main() {
-	fmt.Println("[Hex].....", Hex(8))
-	fmt.Println("[Num].....", Num(8))
-	fmt.Println("[Alpha]...", Alpha(8))
-	fmt.Println("[Alnum]...", Alnum(8))
+	fmt.Println("[Hex].....", Hex(8))   // throbbing-shiken-ec706505
+	fmt.Println("[Num].....", Num(8))   // long-kome-02652440
+	fmt.Println("[Alpha]...", Alpha(8)) // yellow-do-rqXmCaPP
+	fmt.Println("[Alnum]...", Alnum(8)) // lucky-mikan-jyP87IMY
 }
 ```
