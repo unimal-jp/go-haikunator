@@ -1,4 +1,4 @@
-package uninames
+package uninames // import github.com/unimal-jp/uninames
 
 import (
 	"bytes"
