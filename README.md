@@ -1,6 +1,6 @@
-# uninames
+# go-haikunator
 
-GO haikunator. Heroku like word generator
+Heroku like word generator.
 
 # Usage
 
@@ -8,15 +8,14 @@ GO haikunator. Heroku like word generator
 package main
 
 import (
-  "fmt"
-  "github.com/unimal-jp/uninames"
+	"fmt"
+	"github.com/unimal-jp/go-haikunator"
 )
 
-
 func main() {
-	fmt.Println("[Hex].....", Hex(8))   // throbbing-shiken-ec706505
-	fmt.Println("[Num].....", Num(8))   // long-kome-02652440
-	fmt.Println("[Alpha]...", Alpha(8)) // yellow-do-rqXmCaPP
-	fmt.Println("[Alnum]...", Alnum(8)) // lucky-mikan-jyP87IMY
+	fmt.Println("[Hex].....", haikunator.Hex(8))   // throbbing-shiken-ec706505
+	fmt.Println("[Num].....", haikunator.Num(8))   // long-kome-02652440
+	fmt.Println("[Alpha]...", haikunator.Alpha(8)) // yellow-do-rqXmCaPP
+	fmt.Println("[Alnum]...", haikunator.Alnum(8)) // lucky-mikan-jyP87IMY
 }
 ```

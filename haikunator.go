@@ -1,4 +1,4 @@
-package uninames // import github.com/unimal-jp/uninames
+package haikunator
 
 import (
 	"bytes"
