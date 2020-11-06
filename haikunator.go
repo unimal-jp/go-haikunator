@@ -19,7 +19,7 @@ var hexTokenChars = "0123456789abcdef"
 var numTokenChars = "0123456789"
 var alphaTokenChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
-func gen(tokenLength int, tokenChars string) string {
+func gen(tokenLength int, tokenChars string, OnlyHex bool) string {
 	s1 := rand.NewSource(time.Now().UnixNano())
 	r1 := rand.New(s1)
 
@@ -32,25 +32,34 @@ func gen(tokenLength int, tokenChars string) string {
 		tok.WriteString(x)
 	}
 
+	if OnlyHex {
+		return tok.String()
+	}
+
 	return fmt.Sprintf("%s-%s-%s", adj, nou, tok.String())
 }
 
 // Hex : Create hex string
 func Hex(tokenLength int) string {
-	return gen(tokenLength, hexTokenChars)
+	return gen(tokenLength, hexTokenChars, false)
+}
+
+// OnlyHex : Create only hex string
+func OnlyHex(tokenLength int) string {
+	return gen(tokenLength, hexTokenChars, true)
 }
 
 // Num : Create num string
 func Num(tokenLength int) string {
-	return gen(tokenLength, numTokenChars)
+	return gen(tokenLength, numTokenChars, false)
 }
 
 // Alpha : Create alpha string
 func Alpha(tokenLength int) string {
-	return gen(tokenLength, alphaTokenChars)
+	return gen(tokenLength, alphaTokenChars, false)
 }
 
 // Alnum : Create alpha string
 func Alnum(tokenLength int) string {
-	return gen(tokenLength, alphaTokenChars+numTokenChars)
+	return gen(tokenLength, alphaTokenChars+numTokenChars, false)
 }
