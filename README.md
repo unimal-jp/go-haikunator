@@ -17,5 +17,6 @@ func main() {
 	fmt.Println("[Num].....", haikunator.Num(8))   // long-kome-02652440
 	fmt.Println("[Alpha]...", haikunator.Alpha(8)) // yellow-do-rqXmCaPP
 	fmt.Println("[Alnum]...", haikunator.Alnum(8)) // lucky-mikan-jyP87IMY
+	fmt.Println("[onlyHex]...", haikunator.onlyHex(8)) // jyP87IMY
 }
 ```
