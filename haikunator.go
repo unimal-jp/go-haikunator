@@ -49,6 +49,11 @@ func OnlyHex(tokenLength int) string {
 	return gen(tokenLength, hexTokenChars, true)
 }
 
+// OnlyNum : Create only hex string
+func OnlyNum(tokenLength int) string {
+	return gen(tokenLength, numTokenChars, true)
+}
+
 // Num : Create num string
 func Num(tokenLength int) string {
 	return gen(tokenLength, numTokenChars, false)
